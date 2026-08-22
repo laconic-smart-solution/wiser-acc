@@ -14,14 +14,16 @@ const WiserApp = (() => {
 
       if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
-          const isCurrentlyHidden = mobileMenu.classList.contains('hidden');
+          const isCurrentlyHidden = mobileMenu.classList.contains('max-h-0');
           if (isCurrentlyHidden) {
-            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.remove('max-h-0', 'opacity-0', 'invisible', 'pt-0', 'pb-0');
+            mobileMenu.classList.add('max-h-[600px]', 'opacity-100', 'pt-3', 'pb-6');
             mobileMenuBtn.setAttribute('aria-expanded', 'true');
             mobileMenuBtn.setAttribute('aria-label', 'Close menu');
             mobileMenuBtn.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>';
           } else {
-            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.add('max-h-0', 'opacity-0', 'invisible', 'pt-0', 'pb-0');
+            mobileMenu.classList.remove('max-h-[600px]', 'opacity-100', 'pt-3', 'pb-6');
             mobileMenuBtn.setAttribute('aria-expanded', 'false');
             mobileMenuBtn.setAttribute('aria-label', 'Open menu');
             mobileMenuBtn.innerHTML = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>';
