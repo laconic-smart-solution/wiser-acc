@@ -69,8 +69,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Production Compiled Tailwind CSS & Custom Styles -->
-  <link rel="stylesheet" href="assets/css/tailwind.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/tailwind.min.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body class="bg-slate-50 text-slate-900 font-body antialiased flex flex-col min-h-screen">
 
@@ -172,7 +172,7 @@
   </header>
 
   <!-- HERO SECTION: 3-Second Brand Clarity & Value Proposition -->
-  <section class="relative hero-mesh text-white overflow-hidden py-20 lg:py-32">
+  <section class="relative hero-mesh text-white overflow-hidden py-20 lg:py-26">
     <div class="absolute inset-0 hero-pattern opacity-60"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -191,7 +191,7 @@
           </h1>
 
           <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed" data-i18n="hero.description">
-            <strong class="text-white">WISER ACC</strong> is the authorized overseas sample factory of <strong class="text-white">Shanghai WISER Machinery</strong> (high-spin washers, ironers, folders) and strategic partner of <strong class="text-white">Sidefu China</strong> (OEKO-TEX 100 luxury linens). We design, equip, and support commercial laundry operations worldwide.
+            We run <strong class="text-white">Shanghai WISER's</strong> authorized overseas sample factory — the same high-spin washers, ironers and folders coming off their production line — and work directly with <strong class="text-white">Sidefu China</strong> on the linens that dress the rooms above them. One team, one point of contact, from the machine room to the guest floor.
           </p>
 
           <!-- CTAs -->
@@ -261,40 +261,26 @@
   </section>
 
   <!-- TRUST WALL: 5-STAR HOSPITALITY & COMMERCIAL CLIENTS -->
-  <section class="py-12 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-8">
-        <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">
-          <span data-i18n="trust.clientWallTitle">Trusted by Premier Hospitality Groups &amp; Commercial Healthcare Facilities</span>
-        </span>
-      </div>
-      
-      <!-- Brand Logos Grid / Wall -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center opacity-75">
-        <div class="client-logo-item flex flex-col items-center">
-          <span class="font-display font-extrabold text-lg text-slate-700 tracking-wider">MARRIOTT</span>
-          <span class="text-[9px] uppercase tracking-widest text-slate-400">International</span>
-        </div>
-        <div class="client-logo-item flex flex-col items-center">
-          <span class="font-display font-extrabold text-lg text-slate-700 tracking-wider">HILTON</span>
-          <span class="text-[9px] uppercase tracking-widest text-slate-400">Hotels &amp; Resorts</span>
-        </div>
-        <div class="client-logo-item flex flex-col items-center">
-          <span class="font-display font-extrabold text-lg text-slate-700 tracking-wider">IHG</span>
-          <span class="text-[9px] uppercase tracking-widest text-slate-400">InterContinental</span>
-        </div>
-        <div class="client-logo-item flex flex-col items-center">
-          <span class="font-display font-extrabold text-lg text-slate-700 tracking-wider">HYATT</span>
-          <span class="text-[9px] uppercase tracking-widest text-slate-400">Hotels &amp; Spas</span>
-        </div>
-        <div class="client-logo-item flex flex-col items-center">
-          <span class="font-display font-extrabold text-lg text-slate-700 tracking-wider">KEMPINSKI</span>
-          <span class="text-[9px] uppercase tracking-widest text-slate-400">Hoteliers 1897</span>
-        </div>
-        <div class="client-logo-item flex flex-col items-center">
-          <span class="font-display font-extrabold text-lg text-slate-700 tracking-wider">BANYAN TREE</span>
-          <span class="text-[9px] uppercase tracking-widest text-slate-400">Luxury Resorts</span>
-        </div>
+  <section class="py-14 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+      <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400" data-i18n="trust.clientWallTitle">Trusted by Premier Hospitality Groups &amp; Commercial Healthcare Facilities</span>
+    </div>
+
+    <!-- Full-bleed infinite marquee; content is duplicated once so translateX(-50%) loops seamlessly -->
+    <div class="marquee-wrap">
+      <div class="marquee-track gap-24 pr-24">
+        <img src="assets/trust-by-logos/1e8f3b0d56facbc72890f2f651e9bd6f.png" alt="Marriott" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/e49a418b9219400aaea721ef4c027ff4.png" alt="Hilton" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/IHG-Logo.png" alt="IHG Hotels & Resorts" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/7a7bfe292db4842c8f93b9f7e0fa5513.png" alt="Hyatt" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/ba13c4f4744b797712aa326ace02c496.png" alt="Kempinski" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/banyan-tree-seeklogo.png" alt="Banyan Tree" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/1e8f3b0d56facbc72890f2f651e9bd6f.png" alt="" aria-hidden="true" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/e49a418b9219400aaea721ef4c027ff4.png" alt="" aria-hidden="true" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/IHG-Logo.png" alt="" aria-hidden="true" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/7a7bfe292db4842c8f93b9f7e0fa5513.png" alt="" aria-hidden="true" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/ba13c4f4744b797712aa326ace02c496.png" alt="" aria-hidden="true" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
+        <img src="assets/trust-by-logos/banyan-tree-seeklogo.png" alt="" aria-hidden="true" class="client-logo-item h-14 sm:h-16 w-auto object-contain shrink-0" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>
@@ -302,163 +288,80 @@
   <!-- FACTORY AUTHORIZATION & VERIFIED CERTIFICATIONS SECTION -->
   <section class="py-20 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-        <span class="text-xs font-bold uppercase tracking-wider text-ocean-500">Verified Factory Credentials</span>
+      <div class="max-w-2xl mb-14 reveal">
+        <span class="text-xs font-bold uppercase tracking-wider text-ocean-500" data-i18n="trust.credentialsTag">Verified Factory Credentials</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2 font-display" data-i18n="trust.credentialsTitle">Engineered Under World-Class Standards</h2>
-        <p class="text-slate-600 mt-3 text-base">Every Shanghai WISER machine and Sidefu linen batch meets stringent international quality, safety, and environmental benchmarks.</p>
+        <p class="text-slate-600 mt-3 text-base" data-i18n="trust.credentialsDesc">Every Shanghai WISER machine and Sidefu linen batch meets stringent international quality, safety, and environmental benchmarks.</p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-        
+      <!-- Certification Datasheet Grid: hairline dividers instead of stacked card shadows -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200 rounded-3xl overflow-hidden reveal">
+
         <!-- Card 1: Authorized Sample Factory -->
-        <div class="group bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between reveal">
-          <div>
-            <!-- Image Header with Floating Icon & Metric Badge -->
-            <div class="relative aspect-[16/10] overflow-hidden bg-slate-900">
-              <img src="assets/images/factory/factory-floor.jpg" alt="Shanghai WISER Authorized Factory Floor" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
-              
-              <!-- Floating Icon -->
-              <div class="absolute top-3.5 left-3.5 w-10 h-10 rounded-xl bg-navy-950/80 backdrop-blur-md border border-white/20 text-ocean-400 flex items-center justify-center shadow-lg">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-              </div>
-
-              <!-- Metric Pill -->
-              <div class="absolute top-3.5 right-3.5 px-2.5 py-1 bg-blue-600/90 backdrop-blur-md text-white text-[10px] font-bold rounded-lg uppercase tracking-wider shadow-md">
-                100% Genuine
-              </div>
-
-              <!-- Sub-label on bottom of image -->
-              <div class="absolute bottom-2.5 left-3.5 text-[11px] font-mono text-teal-300 font-semibold">
-                EST. 2004 • SHANGHAI WISER
-              </div>
+        <div class="group bg-white p-7 hover:bg-white transition-colors flex flex-col">
+          <div class="flex items-start justify-between mb-6">
+            <div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
             </div>
-
-            <!-- Content Body -->
-            <div class="p-6 space-y-2">
-              <span class="text-xs font-bold uppercase tracking-wider text-ocean-600 block">Direct Factory</span>
-              <h4 class="text-lg font-bold text-navy-900 font-display">Authorized Sample Factory</h4>
-              <p class="text-xs text-slate-500 leading-relaxed">Direct overseas operating center for Shanghai WISER Machinery Co., Ltd. with official technical and warranty backing.</p>
-            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-1 rounded-md" data-i18n="trust.card1Metric">100% Genuine</span>
           </div>
-
-          <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium text-slate-600">
-            <span class="text-slate-400">Warranty:</span>
-            <span class="font-bold text-navy-900">24 Months Factory Backed</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1.5" data-i18n="trust.card1Tag">Direct Factory</span>
+          <h4 class="text-base font-bold text-navy-900 font-display mb-2" data-i18n="trust.card1Title">Authorized Sample Factory</h4>
+          <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="trust.card1Desc">Direct overseas operating center for Shanghai WISER Machinery Co., Ltd. with official technical and warranty backing.</p>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400" data-i18n="trust.card1FootLabel">Warranty:</span>
+            <span class="font-bold text-navy-900" data-i18n="trust.card1FootVal">24 Months Factory Backed</span>
           </div>
         </div>
 
         <!-- Card 2: CE European Directive -->
-        <div class="group bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between reveal delay-100">
-          <div>
-            <!-- Image Header with Floating Icon & Metric Badge -->
-            <div class="relative aspect-[16/10] overflow-hidden bg-slate-900">
-              <img src="assets/images/factory/balancing-test.jpg" alt="CE Dynamic Laser Balancing Rig" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
-              
-              <!-- Floating Icon -->
-              <div class="absolute top-3.5 left-3.5 w-10 h-10 rounded-xl bg-navy-950/80 backdrop-blur-md border border-white/20 text-teal-400 flex items-center justify-center shadow-lg">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-              </div>
-
-              <!-- Metric Pill -->
-              <div class="absolute top-3.5 right-3.5 px-2.5 py-1 bg-teal-600/90 backdrop-blur-md text-white text-[10px] font-bold rounded-lg uppercase tracking-wider shadow-md">
-                350G High Extract
-              </div>
-
-              <!-- Sub-label on bottom of image -->
-              <div class="absolute bottom-2.5 left-3.5 text-[11px] font-mono text-teal-300 font-semibold">
-                2006/42/EC • EMC COMPLIANT
-              </div>
+        <div class="group bg-white p-7 hover:bg-white transition-colors flex flex-col">
+          <div class="flex items-start justify-between mb-6">
+            <div class="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             </div>
-
-            <!-- Content Body -->
-            <div class="p-6 space-y-2">
-              <span class="text-xs font-bold uppercase tracking-wider text-teal-600 block">CE Mark Directive</span>
-              <h4 class="text-lg font-bold text-navy-900 font-display">European Safety Standards</h4>
-              <p class="text-xs text-slate-500 leading-relaxed">Full compliance with EU Machinery Directive 2006/42/EC, Low Voltage Directive, and EMC electromagnetic standards.</p>
-            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-2 py-1 rounded-md" data-i18n="trust.card2Metric">350G High Extract</span>
           </div>
-
-          <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium text-slate-600">
-            <span class="text-slate-400">Dynamic QA:</span>
-            <span class="font-bold text-teal-700">100% Laser Balanced</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1.5" data-i18n="trust.card2Tag">CE Mark Directive</span>
+          <h4 class="text-base font-bold text-navy-900 font-display mb-2" data-i18n="trust.card2Title">European Safety Standards</h4>
+          <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="trust.card2Desc">Full compliance with EU Machinery Directive 2006/42/EC, Low Voltage Directive, and EMC electromagnetic standards.</p>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400" data-i18n="trust.card2FootLabel">Dynamic QA:</span>
+            <span class="font-bold text-teal-700" data-i18n="trust.card2FootVal">100% Laser Balanced</span>
           </div>
         </div>
 
         <!-- Card 3: ISO 9001 & 14001 -->
-        <div class="group bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between reveal delay-200">
-          <div>
-            <!-- Image Header with Floating Icon & Metric Badge -->
-            <div class="relative aspect-[16/10] overflow-hidden bg-slate-900">
-              <img src="assets/images/factory/factory1.jpg" alt="ISO Quality Certified Production Bay" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
-              
-              <!-- Floating Icon -->
-              <div class="absolute top-3.5 left-3.5 w-10 h-10 rounded-xl bg-navy-950/80 backdrop-blur-md border border-white/20 text-blue-400 flex items-center justify-center shadow-lg">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-              </div>
-
-              <!-- Metric Pill -->
-              <div class="absolute top-3.5 right-3.5 px-2.5 py-1 bg-navy-900/90 backdrop-blur-md text-white text-[10px] font-bold rounded-lg uppercase tracking-wider shadow-md">
-                ISO 9001 &amp; 14001
-              </div>
-
-              <!-- Sub-label on bottom of image -->
-              <div class="absolute bottom-2.5 left-3.5 text-[11px] font-mono text-teal-300 font-semibold">
-                ISO 13485 HEALTHCARE QA
-              </div>
+        <div class="group bg-white p-7 hover:bg-white transition-colors flex flex-col">
+          <div class="flex items-start justify-between mb-6">
+            <div class="w-11 h-11 rounded-xl bg-navy-800/10 text-navy-800 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
             </div>
-
-            <!-- Content Body -->
-            <div class="p-6 space-y-2">
-              <span class="text-xs font-bold uppercase tracking-wider text-navy-800 block">International QA</span>
-              <h4 class="text-lg font-bold text-navy-900 font-display">Quality &amp; Environmental</h4>
-              <p class="text-xs text-slate-500 leading-relaxed">Rigorous factory quality control system, ISO 13485 medical cleanliness, and energy-efficient manufacturing.</p>
-            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-navy-800 bg-navy-800/10 px-2 py-1 rounded-md" data-i18n="trust.card3Metric">ISO 9001 &amp; 14001</span>
           </div>
-
-          <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium text-slate-600">
-            <span class="text-slate-400">Standard:</span>
-            <span class="font-bold text-navy-900">Zero-Defect Protocol</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1.5" data-i18n="trust.card3Tag">International QA</span>
+          <h4 class="text-base font-bold text-navy-900 font-display mb-2" data-i18n="trust.card3Title">Quality &amp; Environmental</h4>
+          <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="trust.card3Desc">Rigorous factory quality control system, ISO 13485 medical cleanliness, and energy-efficient manufacturing.</p>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400" data-i18n="trust.card3FootLabel">Standard:</span>
+            <span class="font-bold text-navy-900" data-i18n="trust.card3FootVal">Zero-Defect Protocol</span>
           </div>
         </div>
 
         <!-- Card 4: OEKO-TEX Standard 100 -->
-        <div class="group bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between reveal delay-300">
-          <div>
-            <!-- Image Header with Floating Icon & Metric Badge -->
-            <div class="relative aspect-[16/10] overflow-hidden bg-slate-900">
-              <img src="assets/images/factory/factory2.jpg" alt="Sidefu Luxury Hotel Linen Quality Check" loading="lazy" decoding="async" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
-              
-              <!-- Floating Icon -->
-              <div class="absolute top-3.5 left-3.5 w-10 h-10 rounded-xl bg-navy-950/80 backdrop-blur-md border border-white/20 text-amber-400 flex items-center justify-center shadow-lg">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-              </div>
-
-              <!-- Metric Pill -->
-              <div class="absolute top-3.5 right-3.5 px-2.5 py-1 bg-amber-600/90 backdrop-blur-md text-white text-[10px] font-bold rounded-lg uppercase tracking-wider shadow-md">
-                OEKO-TEX Class 1
-              </div>
-
-              <!-- Sub-label on bottom of image -->
-              <div class="absolute bottom-2.5 left-3.5 text-[11px] font-mono text-amber-300 font-semibold">
-                300+ WASH DURABILITY
-              </div>
+        <div class="group bg-white p-7 hover:bg-white transition-colors flex flex-col">
+          <div class="flex items-start justify-between mb-6">
+            <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
             </div>
-
-            <!-- Content Body -->
-            <div class="p-6 space-y-2">
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block">Sidefu Strategic Partner</span>
-              <h4 class="text-lg font-bold text-navy-900 font-display">Sidefu Hotel Linen Safety</h4>
-              <p class="text-xs text-slate-500 leading-relaxed">Certified free from harmful chemicals, heavy metals, and formaldehyde. Tested safe for baby skin and luxury hospitality.</p>
-            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-1 rounded-md" data-i18n="trust.card4Metric">OEKO-TEX Class 1</span>
           </div>
-
-          <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium text-slate-600">
-            <span class="text-slate-400">Skin Safety:</span>
-            <span class="font-bold text-amber-700">OEKO-TEX 100 Certified</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1.5" data-i18n="trust.card4Tag">Sidefu Strategic Partner</span>
+          <h4 class="text-base font-bold text-navy-900 font-display mb-2" data-i18n="trust.card4Title">Sidefu Hotel Linen Safety</h4>
+          <p class="text-xs text-slate-500 leading-relaxed flex-1" data-i18n="trust.card4Desc">Certified free from harmful chemicals, heavy metals, and formaldehyde. Tested safe for baby skin and luxury hospitality.</p>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400" data-i18n="trust.card4FootLabel">Skin Safety:</span>
+            <span class="font-bold text-amber-700" data-i18n="trust.card4FootVal">OEKO-TEX 100 Certified</span>
           </div>
         </div>
 
@@ -540,56 +443,8 @@
         </p>
       </div>
 
-      <!-- Visual 5-Step Dashed Process Stepper Diagram -->
-      <div class="max-w-4xl mx-auto mb-16 px-4 reveal">
-        <div class="relative flex items-center justify-between">
-          <!-- Continuous Dashed Connecting Line -->
-          <div class="absolute left-8 right-8 top-6 h-0 border-t-[3.5px] border-dashed border-teal-400 z-0"></div>
-
-          <!-- Node 1: Collect -->
-          <div class="relative z-10 flex flex-col items-center group cursor-default">
-            <div class="w-12 h-12 rounded-full bg-white border-[3.5px] border-teal-500 text-teal-600 font-extrabold font-display text-base flex items-center justify-center shadow-md group-hover:scale-110 group-hover:bg-teal-50 transition-all">
-              1
-            </div>
-            <span class="mt-3 text-xs sm:text-sm font-bold text-navy-900 tracking-wide" data-i18n="cycle.step1Name">Collect</span>
-          </div>
-
-          <!-- Node 2: Clean -->
-          <div class="relative z-10 flex flex-col items-center group cursor-default">
-            <div class="w-12 h-12 rounded-full bg-white border-[3.5px] border-teal-500 text-teal-600 font-extrabold font-display text-base flex items-center justify-center shadow-md group-hover:scale-110 group-hover:bg-teal-50 transition-all">
-              2
-            </div>
-            <span class="mt-3 text-xs sm:text-sm font-bold text-navy-900 tracking-wide" data-i18n="cycle.step2Name">Clean</span>
-          </div>
-
-          <!-- Node 3: Care -->
-          <div class="relative z-10 flex flex-col items-center group cursor-default">
-            <div class="w-12 h-12 rounded-full bg-white border-[3.5px] border-teal-500 text-teal-600 font-extrabold font-display text-base flex items-center justify-center shadow-md group-hover:scale-110 group-hover:bg-teal-50 transition-all">
-              3
-            </div>
-            <span class="mt-3 text-xs sm:text-sm font-bold text-navy-900 tracking-wide" data-i18n="cycle.step3Name">Care</span>
-          </div>
-
-          <!-- Node 4: Deliver -->
-          <div class="relative z-10 flex flex-col items-center group cursor-default">
-            <div class="w-12 h-12 rounded-full bg-white border-[3.5px] border-teal-500 text-teal-600 font-extrabold font-display text-base flex items-center justify-center shadow-md group-hover:scale-110 group-hover:bg-teal-50 transition-all">
-              4
-            </div>
-            <span class="mt-3 text-xs sm:text-sm font-bold text-navy-900 tracking-wide" data-i18n="cycle.step4Name">Deliver</span>
-          </div>
-
-          <!-- Node 5: Partner -->
-          <div class="relative z-10 flex flex-col items-center group cursor-default">
-            <div class="w-12 h-12 rounded-full bg-white border-[3.5px] border-teal-500 text-teal-600 font-extrabold font-display text-base flex items-center justify-center shadow-md group-hover:scale-110 group-hover:bg-teal-50 transition-all">
-              5
-            </div>
-            <span class="mt-3 text-xs sm:text-sm font-bold text-navy-900 tracking-wide" data-i18n="cycle.step5Name">Partner</span>
-          </div>
-        </div>
-      </div>
-
       <!-- 5-Step Process Cards Grid -->
-      <div class="relative">
+      <div class="relative mt-4">
         
         <!-- Desktop Pipeline Connector Line -->
         <div class="hidden lg:block absolute top-[28%] left-8 right-8 h-1 bg-gradient-to-r from-blue-400 via-teal-400 via-amber-400 to-ocean-500 rounded-full opacity-35 z-0"></div>
@@ -807,8 +662,9 @@
               </select>
             </div>
 
-            <div class="text-xs text-slate-500 bg-slate-50 p-3 rounded-lg border border-slate-100">
-              <p>💡 Estimates based on standard 4.5kg linen/room/day (bedding, bath, F&amp;B) with 3.0 Par inventory cycle.</p>
+            <div class="flex items-start gap-2.5 text-xs text-slate-500 bg-slate-50 p-3 rounded-lg border border-slate-100">
+              <svg class="w-4 h-4 text-ocean-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <p>Estimates based on standard 4.5kg linen/room/day (bedding, bath, F&amp;B) with 3.0 Par inventory cycle.</p>
             </div>
           </div>
 
@@ -852,8 +708,9 @@
                   </div>
                 </div>
 
-                <div class="p-3 rounded-lg bg-navy-900 border border-navy-700/60 text-xs text-teal-300 font-medium">
-                  🌱 <span id="calc-out-savings">~3,600 L/day water &amp; 25% steam savings vs legacy plants</span>
+                <div class="flex items-start gap-2.5 p-3 rounded-lg bg-navy-900 border border-navy-700/60 text-xs text-teal-300 font-medium">
+                  <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2c0 5-7 8.5-7 13a7 7 0 0014 0c0-4.5-7-8-7-13z"/></svg>
+                  <span id="calc-out-savings">~3,600 L/day water &amp; 25% steam savings vs legacy plants</span>
                 </div>
               </div>
             </div>
