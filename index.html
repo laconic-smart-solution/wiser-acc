@@ -639,7 +639,7 @@
       <div class="text-center max-w-3xl mx-auto mb-14 reveal">
         <span class="text-xs font-bold uppercase tracking-wider text-ocean-500" data-i18n="calculator.tag">Interactive Engineering Tool</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2 font-display" data-i18n="calculator.title">Laundry Capacity &amp; Equipment Estimator</h2>
-        <p class="text-slate-600 mt-3 text-sm">Select your facility parameters to calculate daily wash volume and get a recommended Shanghai WISER machinery configuration.</p>
+        <p class="text-slate-600 mt-3 text-sm" data-i18n="calculator.desc">Select your facility parameters to calculate daily wash volume and get a recommended Shanghai WISER machinery configuration.</p>
       </div>
 
       <div class="bg-slate-50 rounded-3xl border border-slate-200 p-6 md:p-10 shadow-lg reveal">
@@ -661,12 +661,12 @@
             </div>
 
             <div>
-              <label id="calc-count-label" for="calc-unit-count" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Number of Guest Rooms:</label>
+              <label id="calc-count-label" for="calc-unit-count" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2" data-i18n="calcDynamic.roomsLabel">Number of Guest Rooms:</label>
               <input type="number" id="calc-unit-count" value="250" min="10" max="10000" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm font-medium text-slate-800 focus:ring-2 focus:ring-ocean-500 focus:outline-none" />
             </div>
 
             <div>
-              <label for="calc-work-hours" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Daily Operating Shift Hours</label>
+              <label for="calc-work-hours" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2" data-i18n="calcDynamic.shiftHoursLabel">Daily Operating Shift Hours</label>
               <select id="calc-work-hours" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm font-medium text-slate-800 focus:ring-2 focus:ring-ocean-500 focus:outline-none">
                 <option value="8" selected>1 Shift (8 Hours / Day)</option>
                 <option value="10">Extended Shift (10 Hours / Day)</option>
@@ -676,7 +676,7 @@
 
             <div class="flex items-start gap-2.5 text-xs text-slate-500 bg-slate-50 p-3 rounded-lg border border-slate-100">
               <svg class="w-4 h-4 text-ocean-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <p>Estimates based on standard 4.5kg linen/room/day (bedding, bath, F&amp;B) with 3.0 Par inventory cycle.</p>
+              <p data-i18n="calcDynamic.disclaimer">Estimates based on standard 4.5kg linen/room/day (bedding, bath, F&amp;B) with 3.0 Par inventory cycle.</p>
             </div>
           </div>
 
@@ -685,37 +685,37 @@
             <div class="bg-navy-950 text-white rounded-2xl p-6 border border-navy-800">
               <div class="grid grid-cols-2 gap-4 pb-6 border-b border-navy-800">
                 <div>
-                  <span class="text-xs text-slate-400 font-medium">Daily Wash Volume</span>
+                  <span class="text-xs text-slate-400 font-medium" data-i18n="calcDynamic.dailyWashVolume">Daily Wash Volume</span>
                   <span id="calc-out-daily-kg" class="block font-display font-extrabold text-2xl sm:text-3xl text-teal-400 mt-1">1,125 kg/day</span>
                 </div>
                 <div>
-                  <span class="text-xs text-slate-400 font-medium">Required Hourly Output</span>
+                  <span class="text-xs text-slate-400 font-medium" data-i18n="calcDynamic.requiredHourly">Required Hourly Output</span>
                   <span id="calc-out-hourly-kg" class="block font-display font-extrabold text-2xl sm:text-3xl text-white mt-1">141 kg/hr</span>
                 </div>
               </div>
 
               <div class="pt-6 space-y-4">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-teal-400">Recommended Shanghai WISER Lineup</h4>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-teal-400" data-i18n="calcDynamic.recLineup">Recommended Shanghai WISER Lineup</h4>
                 
                 <div class="space-y-2.5 text-xs">
                   <div class="flex justify-between py-1.5 border-b border-navy-800/80">
-                    <span class="text-slate-400">Washers:</span>
+                    <span class="text-slate-400" data-i18n="calcDynamic.labelWashers">Washers:</span>
                     <span id="calc-out-washers" class="font-semibold text-white text-right">2x WISER 50kg Soft-Mount Washer Extractors</span>
                   </div>
                   <div class="flex justify-between py-1.5 border-b border-navy-800/80">
-                    <span class="text-slate-400">Dryers:</span>
+                    <span class="text-slate-400" data-i18n="calcDynamic.labelDryers">Dryers:</span>
                     <span id="calc-out-dryers" class="font-semibold text-white text-right">2x WISER 50kg Eco-Air Dryers</span>
                   </div>
                   <div class="flex justify-between py-1.5 border-b border-navy-800/80">
-                    <span class="text-slate-400">Flatwork Ironing:</span>
+                    <span class="text-slate-400" data-i18n="calcDynamic.labelIroner">Flatwork Ironing:</span>
                     <span id="calc-out-ironer" class="font-semibold text-white text-right">1x WISER 3300mm Double-Roller Steam Ironer</span>
                   </div>
                   <div class="flex justify-between py-1.5 border-b border-navy-800/80">
-                    <span class="text-slate-400">Automated Folders:</span>
+                    <span class="text-slate-400" data-i18n="calcDynamic.labelFolders">Automated Folders:</span>
                     <span id="calc-out-folders" class="font-semibold text-white text-right">1x WISER Automated 4-Lane Sheet Folder</span>
                   </div>
                   <div class="flex justify-between py-1.5">
-                    <span class="text-slate-400">Sidefu Linen Par:</span>
+                    <span class="text-slate-400" data-i18n="calcDynamic.labelLinenPar">Sidefu Linen Par:</span>
                     <span id="calc-out-linen-par" class="font-semibold text-amber-300 text-right">750 Sets (Sidefu 5-Star Certified)</span>
                   </div>
                 </div>
@@ -729,7 +729,7 @@
 
             <!-- Transfer to RFQ Button -->
             <a id="calc-transfer-rfq-btn" href="contact.html" class="w-full block py-3.5 px-6 bg-ocean-500 hover:bg-ocean-600 text-white text-center font-bold rounded-xl text-sm shadow-lg shadow-ocean-500/20 transition-all">
-              Request Formal Quotation for this Configuration &rarr;
+              <span data-i18n="calcDynamic.btnRfq">Request Formal Quotation for this Configuration →</span>
             </a>
           </div>
 
@@ -743,8 +743,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 reveal">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-ocean-500">Global Reference Projects</span>
-          <h2 class="text-3xl font-extrabold text-navy-900 mt-2 font-display">Proven Deployments Across Hospitality &amp; Healthcare</h2>
+          <span class="text-xs font-bold uppercase tracking-wider text-ocean-500" data-i18n="projectsTeaser.tag">Global Reference Projects</span>
+          <h2 class="text-3xl font-extrabold text-navy-900 mt-2 font-display" data-i18n="projectsTeaser.title">Proven Deployments Across Hospitality &amp; Healthcare</h2>
         </div>
         <a href="projects.html" class="mt-4 md:mt-0 text-sm font-semibold text-ocean-500 hover:text-ocean-700 flex items-center gap-1">
           View All Projects &rarr;
@@ -755,9 +755,9 @@
         <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm reveal">
           <img src="assets/images/projects/hotel-project.jpg" alt="5-Star Resort Project" loading="lazy" decoding="async" class="w-full aspect-[16/10] object-cover" />
           <div class="p-6">
-            <span class="luxury-badge text-[10px] mb-2">5-Star Hospitality</span>
-            <h3 class="font-bold text-navy-900 text-lg mb-2">Luxury Island Resort Turnkey Laundry</h3>
-            <p class="text-xs text-slate-500 leading-relaxed mb-4">Complete 1,200 kg/day plant with Sidefu 800T sateen linens and Shanghai WISER soft-mount machinery.</p>
+            <span class="luxury-badge text-[10px] mb-2" data-i18n="projectsTeaser.card1Badge">5-Star Hospitality</span>
+            <h3 class="font-bold text-navy-900 text-lg mb-2 font-display" data-i18n="projectsTeaser.card1Title">Luxury Island Resort Turnkey Laundry</h3>
+            <p class="text-xs text-slate-500 leading-relaxed mb-4" data-i18n="projectsTeaser.card1Desc">Complete 1,200 kg/day plant with Sidefu 800T sateen linens and Shanghai WISER soft-mount machinery.</p>
             <a href="projects.html" class="text-xs font-semibold text-ocean-500 hover:underline">Explore Case Study &rarr;</a>
           </div>
         </div>
@@ -765,9 +765,9 @@
         <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm reveal delay-100">
           <img src="assets/images/projects/hospital-project.jpg" alt="Hospital Project" loading="lazy" decoding="async" class="w-full aspect-[16/10] object-cover" />
           <div class="p-6">
-            <span class="hygiene-badge text-[10px] mb-2">Healthcare Bio-Barrier</span>
-            <h3 class="font-bold text-navy-900 text-lg mb-2">Regional Healthcare Infection Control</h3>
-            <p class="text-xs text-slate-500 leading-relaxed mb-4">Pass-through cleanroom partition washer line ensuring zero cross-contamination for 500 patient beds.</p>
+            <span class="hygiene-badge text-[10px] mb-2" data-i18n="projectsTeaser.card2Badge">Healthcare Bio-Barrier</span>
+            <h3 class="font-bold text-navy-900 text-lg mb-2 font-display" data-i18n="projectsTeaser.card2Title">Regional Healthcare Infection Control</h3>
+            <p class="text-xs text-slate-500 leading-relaxed mb-4" data-i18n="projectsTeaser.card2Desc">Pass-through cleanroom partition washer line ensuring zero cross-contamination for 500 patient beds.</p>
             <a href="projects.html" class="text-xs font-semibold text-ocean-500 hover:underline">Explore Case Study &rarr;</a>
           </div>
         </div>
@@ -775,9 +775,9 @@
         <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm reveal delay-200">
           <img src="assets/images/projects/commercial-plant.jpg" alt="Commercial Plant" loading="lazy" decoding="async" class="w-full aspect-[16/10] object-cover" />
           <div class="p-6">
-            <span class="tech-badge text-[10px] mb-2">Industrial Central Plant</span>
-            <h3 class="font-bold text-navy-900 text-lg mb-2">20 Tons/Day Commercial Plant</h3>
-            <p class="text-xs text-slate-500 leading-relaxed mb-4">High-speed continuous ironing lines and automated 4-lane folders with automated sorting conveyors.</p>
+            <span class="tech-badge text-[10px] mb-2" data-i18n="projectsTeaser.card3Badge">Industrial Central Plant</span>
+            <h3 class="font-bold text-navy-900 text-lg mb-2 font-display" data-i18n="projectsTeaser.card3Title">20 Tons/Day Commercial Plant</h3>
+            <p class="text-xs text-slate-500 leading-relaxed mb-4" data-i18n="projectsTeaser.card3Desc">High-speed continuous ironing lines and automated 4-lane folders with automated sorting conveyors.</p>
             <a href="projects.html" class="text-xs font-semibold text-ocean-500 hover:underline">Explore Case Study &rarr;</a>
           </div>
         </div>
@@ -789,8 +789,8 @@
   <section class="py-16 bg-navy-950 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
       <div>
-        <h2 class="text-2xl sm:text-3xl font-bold font-display">Ready to Elevate Your Laundry Operations?</h2>
-        <p class="text-slate-400 text-sm mt-2 max-w-xl">Contact our authorized sales &amp; engineering team for plant layout consultation, machinery quotation, or Sidefu linen fabric swatches.</p>
+        <h2 class="text-2xl sm:text-3xl font-bold font-display" data-i18n="ctaBanner.title">Ready to Elevate Your Laundry Operations?</h2>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl" data-i18n="ctaBanner.desc">Contact our authorized sales &amp; engineering team for plant layout consultation, machinery quotation, or Sidefu linen fabric swatches.</p>
       </div>
       <div class="flex items-center gap-4 shrink-0">
         <a href="contact.html" class="py-3 px-6 bg-ocean-500 hover:bg-ocean-600 text-white font-bold rounded-xl text-sm shadow-lg shadow-ocean-500/30 transition-all">
@@ -816,22 +816,22 @@
             <img src="assets/branding/logo-icon.png" alt="WISER ACC Logo" class="h-10 w-auto" />
             <div>
               <span class="font-display font-extrabold text-2xl tracking-tight text-white leading-none">Wiser<span class="text-ocean-500">ACC</span></span>
-              <p class="text-xs text-teal-400 font-medium">Smart Laundry. Smarter Business.</p>
+              <p class="text-xs text-teal-400 font-medium" data-i18n="footerExtended.tagline">Smart Laundry. Smarter Business.</p>
             </div>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed pr-6">
             Authorized sample factory of Shanghai WISER Machinery Co., Ltd. (<a href="http://www.shweishi.com" target="_blank" class="text-teal-400 hover:underline">www.shweishi.com</a>). Delivering high-productivity industrial laundry machinery and certified 5-star hotel linens in strategic partnership with Sidefu China (<a href="https://www.sidefu-china.com" target="_blank" class="text-teal-400 hover:underline">www.sidefu-china.com</a>).
           </p>
           <div class="flex items-center gap-3 pt-2">
-            <span class="tech-badge text-[11px] bg-navy-900 border-navy-700 text-teal-400">CE European Directive</span>
-            <span class="tech-badge text-[11px] bg-navy-900 border-navy-700 text-teal-400">ISO 9001:2015</span>
-            <span class="luxury-badge text-[11px] bg-navy-900 border-navy-700 text-amber-300">OEKO-TEX 100</span>
+            <span class="tech-badge text-[11px] bg-navy-900 border-navy-700 text-teal-400" data-i18n="footerExtended.ceBadge">CE European Directive</span>
+            <span class="tech-badge text-[11px] bg-navy-900 border-navy-700 text-teal-400" data-i18n="footerExtended.isoBadge">ISO 9001:2015</span>
+            <span class="luxury-badge text-[11px] bg-navy-900 border-navy-700 text-amber-300" data-i18n="footerExtended.oekoBadge">OEKO-TEX 100</span>
           </div>
         </div>
 
         <!-- Quick Links: Machinery -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Industrial Machinery</h4>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footerExtended.machineryTitle">Industrial Machinery</h4>
           <ul class="space-y-2.5 text-xs text-slate-400">
             <li><a href="products.html?cat=machinery" class="hover:text-teal-400 transition-colors">High-Spin Washer Extractors</a></li>
             <li><a href="products.html?cat=machinery" class="hover:text-teal-400 transition-colors">Medical Bio-Barrier Washers</a></li>
@@ -843,7 +843,7 @@
 
         <!-- Quick Links: Sidefu Linen -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Sidefu Luxury Linen</h4>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footerExtended.linenTitle">Sidefu Luxury Linen</h4>
           <ul class="space-y-2.5 text-xs text-slate-400">
             <li><a href="products.html?cat=linen" class="hover:text-amber-300 transition-colors">400T–1000T Sateen Bed Sheets</a></li>
             <li><a href="products.html?cat=linen" class="hover:text-amber-300 transition-colors">Sateen Striped Duvet Covers</a></li>
@@ -855,11 +855,11 @@
 
         <!-- Direct Contact & Factory -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Direct Contact</h4>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footerExtended.contactTitle">Direct Contact</h4>
           <div class="space-y-2.5 text-xs text-slate-400">
             <p class="flex items-start gap-2">
               <svg class="w-4 h-4 text-teal-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>Shanghai WISER Sample Operating Factory &amp; Overseas Headquarters</span>
+              <span><span data-i18n="footerExtended.address">Shanghai WISER Sample Operating Factory &amp; Overseas Headquarters</span></span>
             </p>
             <p class="flex items-center gap-2">
               <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
