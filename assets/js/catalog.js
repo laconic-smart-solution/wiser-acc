@@ -900,6 +900,7 @@ function initProductSearch() {
     openProductModal,
     closeProductModal,
     downloadSpecPDF,
+    getLocalizedProduct,
     productsData
   };
 })();
@@ -910,6 +911,7 @@ document.addEventListener('DOMContentLoaded', WiserCatalog.init);
 // Export for global access & inline HTML / dynamic detail page usage
 window.WiserCatalog = WiserCatalog;
 window.productsData = WiserCatalog.productsData;
+window.getLocalizedProduct = WiserCatalog.getLocalizedProduct;
 window.openProductModal = WiserCatalog.openProductModal;
 window.closeProductModal = WiserCatalog.closeProductModal;
 window.downloadSpecPDF = WiserCatalog.downloadSpecPDF;
