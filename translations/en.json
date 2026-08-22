@@ -309,5 +309,24 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "rfq": "Request Quotation"
+  },
+  "pillars": {
+    "tag": "Complete Integrated Solutions",
+    "title": "Two Pillars of Excellence Under One Roof",
+    "desc": "We combine heavy-duty machinery durability with the tactile refinement demanded by international 5-star hospitality brands.",
+    "card1Badge": "Shanghai WISER Factory Line",
+    "card1Standard": "CE / ISO9001:2015",
+    "card1Title": "Industrial Laundry Machinery",
+    "card1Desc": "Shanghai WISER high-spin washer extractors (15–100kg), medical barrier hygienic pass-through machines, energy-saving tumble dryers, high-speed flatwork ironers (up to 3300mm), and automated sheet/towel folders.",
+    "card1Point1": "Up to 350G High-Speed Vibration Absorbing Soft-Mount",
+    "card1Point2": "30% Energy & Water Savings via Axial Flow & Smart Inverters",
+    "card1Cta": "Explore Machinery Lineup →",
+    "card2Badge": "Sidefu Strategic Partner",
+    "card2Standard": "OEKO-TEX 100 Class 1",
+    "card2Title": "Sidefu Luxury Hotel Linen",
+    "card2Desc": "Official supplier to international 5-star hotel groups. 400T–1000T long-staple Egyptian cotton sheets, sateen striped duvet covers, 650 GSM platinum combed bath towels, velour bathrobes, and stain-resistant banquet linens.",
+    "card2Point1": "Engineered for 300+ Industrial Wash Cycles",
+    "card2Point2": "Silky Luster, Zero Pilling & High Tensile Warp/Weft Strength",
+    "card2Cta": "Explore Sidefu Linen Collection →"
   }
 }
