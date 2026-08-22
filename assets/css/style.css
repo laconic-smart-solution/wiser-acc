@@ -341,6 +341,29 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   transform: translateY(-2px);
 }
 
+/* Trust Wall — Infinite Horizontal Marquee */
+.marquee-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 64px, black calc(100% - 64px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 64px, black calc(100% - 64px), transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee-wrap:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
