@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <rect width="600" height="500" fill="#0E2A47" rx="16"/>
+  <rect x="80" y="120" width="440" height="240" rx="12" fill="#1E293B" stroke="#1877F2" stroke-width="2"/>
+  <line x1="120" y1="240" x2="480" y2="240" stroke="#38BDF8" stroke-width="4" stroke-dasharray="12 8"/>
+  <circle cx="180" cy="240" r="30" fill="#1877F2"/><circle cx="300" cy="240" r="30" fill="#1877F2"/><circle cx="420" cy="240" r="30" fill="#1877F2"/>
+  <text x="300" y="420" fill="#38BDF8" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">20 TONS/DAY CENTRAL LAUNDRY FACTORY</text>
+</svg>

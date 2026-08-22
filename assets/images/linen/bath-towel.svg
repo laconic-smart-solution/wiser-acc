@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <rect width="600" height="500" fill="#F8FAFC" rx="16"/>
+  <rect x="160" y="90" width="280" height="70" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="160" y="170" width="280" height="70" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="160" y="250" width="280" height="70" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="160" y="330" width="280" height="70" rx="12" fill="#0284C7" stroke="#0369A1" stroke-width="2"/>
+  <text x="300" y="370" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">650 GSM COMBED COTTON</text>
+</svg>

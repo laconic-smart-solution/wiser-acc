@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <rect width="600" height="500" fill="#F1F5F9" rx="16"/>
+  <line x1="300" y1="30" x2="300" y2="470" stroke="#0D9488" stroke-width="6" stroke-dasharray="10 8"/>
+  <rect x="80" y="70" width="440" height="360" rx="14" fill="#E2E8F0" stroke="#0F766E" stroke-width="2"/>
+  <rect x="100" y="90" width="180" height="40" rx="6" fill="#FEE2E2"/>
+  <text x="190" y="115" fill="#B91C1C" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">SOILED ZONE (IN)</text>
+  <rect x="320" y="90" width="180" height="40" rx="6" fill="#CCFBF1"/>
+  <text x="410" y="115" fill="#0F766E" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">CLEAN ZONE (OUT)</text>
+  <circle cx="300" cy="270" r="115" fill="#0F172A" stroke="#0D9488" stroke-width="6"/>
+  <circle cx="300" cy="270" r="90" fill="#0E2A47"/>
+  <circle cx="300" cy="270" r="60" fill="none" stroke="#18C7B7" stroke-width="3" stroke-dasharray="10 6"/>
+  <path d="M 285 240 L 300 230 L 315 240 L 315 265 Q 300 280 285 265 Z" fill="#18C7B7"/>
+  <path d="M 295 252 L 299 256 L 306 248" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="300" y="315" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">MEDICAL BIO-BARRIER</text>
+  <text x="300" y="410" fill="#0F766E" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">ISO 14644-1 CLEANROOM CERTIFIED</text>
+</svg>
