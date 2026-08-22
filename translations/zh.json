@@ -478,6 +478,7 @@
   "footerExtended": {
     "tagline": "智洗未来 洞见价值",
     "brandDesc": "上海威士机械有限公司官方授权海外样板工厂 (www.shweishi.com)。携手斯得福 (www.sidefu-china.com) 提供高效工业洗涤装备与五星级酒店布草一站式服务。",
+    "brandDescHtml": "上海威士机械有限公司官方授权海外样板工厂 (<a href=\"http://www.shweishi.com\" target=\"_blank\" class=\"text-teal-400 hover:underline\">www.shweishi.com</a>)。携手斯得福 (<a href=\"https://www.sidefu-china.com\" target=\"_blank\" class=\"text-teal-400 hover:underline\">www.sidefu-china.com</a>) 提供高效工业洗涤装备与五星级酒店布草一站式服务。",
     "ceBadge": "欧盟 CE 指令认证",
     "isoBadge": "ISO 9001:2015 质量体系",
     "oekoBadge": "OEKO-TEX 100 婴儿级认证",
@@ -495,6 +496,7 @@
     "lin5": "纳米级高密防污宴会台布",
     "contactTitle": "官方直接联络",
     "address": "上海威士海外样板工厂运营中心 • 国际工业园区基地",
+    "phone": "+86 138 0000 0000 (微信 / WhatsApp)",
     "chatWhatsApp": "在线即时沟通 (WhatsApp)"
   },
   "contactExtended": {

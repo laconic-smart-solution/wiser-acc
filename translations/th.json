@@ -478,6 +478,7 @@
   "footerExtended": {
     "tagline": "ซักรีดอัจฉริยะ ธุรกิจชาญฉลาด",
     "brandDesc": "โรงงานตัวอย่างในต่างประเทศอย่างเป็นทางการของ Shanghai WISER Machinery Co., Ltd. (www.shweishi.com) ร่วมกับ Sidefu (www.sidefu-china.com) มอบเครื่องจักรซักรีดประสิทธิภาพสูงและผ้าลินินโรงแรม 5 ดาว",
+    "brandDescHtml": "โรงงานตัวอย่างในต่างประเทศอย่างเป็นทางการของ Shanghai WISER Machinery Co., Ltd. (<a href=\"http://www.shweishi.com\" target=\"_blank\" class=\"text-teal-400 hover:underline\">www.shweishi.com</a>) ร่วมกับ Sidefu (<a href=\"https://www.sidefu-china.com\" target=\"_blank\" class=\"text-teal-400 hover:underline\">www.sidefu-china.com</a>) มอบเครื่องจักรซักรีดประสิทธิภาพสูงและผ้าลินินโรงแรม 5 ดาว",
     "ceBadge": "มาตรฐานความปลอดภัยยุโรป CE",
     "isoBadge": "ระบบบริหารคุณภาพ ISO 9001:2015",
     "oekoBadge": "รับรองมาตรฐาน OEKO-TEX 100",
@@ -495,6 +496,7 @@
     "lin5": "ผ้าปูโต๊ะงานเลี้ยงเคลือบสารกันเปื้อน",
     "contactTitle": "ติดต่อโดยตรง",
     "address": "ศูนย์ปฏิบัติการและโรงงานตัวอย่าง Shanghai WISER ต่างประเทศ",
+    "phone": "+86 138 0000 0000 (WhatsApp/WeChat)",
     "chatWhatsApp": "สนทนาผ่าน WhatsApp ทันที"
   },
   "contactExtended": {

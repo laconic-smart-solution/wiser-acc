@@ -478,6 +478,7 @@
   "footerExtended": {
     "tagline": "Smart Laundry. Smarter Business.",
     "brandDesc": "Authorized sample factory of Shanghai WISER Machinery Co., Ltd. (www.shweishi.com). Delivering high-productivity industrial laundry machinery and certified 5-star hotel linens in strategic partnership with Sidefu China (www.sidefu-china.com).",
+    "brandDescHtml": "Authorized sample factory of Shanghai WISER Machinery Co., Ltd. (<a href=\"http://www.shweishi.com\" target=\"_blank\" class=\"text-teal-400 hover:underline\">www.shweishi.com</a>). Delivering high-productivity industrial laundry machinery and certified 5-star hotel linens in strategic partnership with Sidefu China (<a href=\"https://www.sidefu-china.com\" target=\"_blank\" class=\"text-teal-400 hover:underline\">www.sidefu-china.com</a>).",
     "ceBadge": "CE European Directive",
     "isoBadge": "ISO 9001:2015",
     "oekoBadge": "OEKO-TEX 100",
@@ -495,6 +496,7 @@
     "lin5": "Stain-Resistant Table Linen",
     "contactTitle": "Direct Contact",
     "address": "Shanghai WISER Sample Operating Factory & Overseas Headquarters",
+    "phone": "+86 138 0000 0000 (WhatsApp/WeChat)",
     "chatWhatsApp": "Chat on WhatsApp"
   },
   "contactExtended": {
