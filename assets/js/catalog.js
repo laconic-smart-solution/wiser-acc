@@ -805,15 +805,15 @@ function initProductSearch() {
 
               <div class="pt-4 flex flex-wrap items-center gap-3">
                 <a href="product-detail.html?id=${product.id}" class="py-3 px-6 bg-ocean-500 hover:bg-ocean-600 text-white rounded-xl text-xs font-bold uppercase tracking-wider shadow-lg transition-all flex items-center gap-1.5">
-                  <span>Dedicated Spec Page</span>
+                  <span>${getLang() === "zh" ? "进入专属规格详情页" : getLang() === "th" ? "ดูหน้ารายละเอียดเฉพาะรุ่น" : "Dedicated Spec Page"}</span>
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                 </a>
                 <a href="contact.html?product=${encodeURIComponent(product.modelCode || product.title)}" class="py-3 px-6 bg-navy-800 hover:bg-navy-900 text-white rounded-xl text-xs font-bold uppercase tracking-wider shadow-lg transition-all">
-                  Request RFQ &rarr;
+                  ${getLang() === "zh" ? "申请设备报价单 →" : getLang() === "th" ? "ขอใบเสนอราคา →" : "Request RFQ &rarr;"}
                 </a>
                 <button onclick="downloadSpecPDF('${product.modelCode || product.title}')" class="py-3 px-5 border border-slate-300 hover:border-slate-800 text-slate-700 rounded-xl text-xs font-bold transition-all flex items-center gap-2">
                   <svg class="w-4 h-4 text-ocean-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-                  Print Data Sheet
+                  ${getLang() === "zh" ? "打印技术参数表" : getLang() === "th" ? "พิมพ์เอกสารข้อมูลจำเพาะ" : "Print Data Sheet"}
                 </button>
               </div>
             </div>
@@ -823,7 +823,7 @@ function initProductSearch() {
           <div class="space-y-4">
             <h3 class="text-sm font-bold uppercase tracking-wider text-navy-900 flex items-center gap-2 border-b border-slate-100 pb-2">
               <svg class="w-4 h-4 text-teal-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
-              Comprehensive Engineering Specifications
+              ${getLang() === "zh" ? "原厂详细工程技术参数" : getLang() === "th" ? "ข้อกำหนดทางวิศวกรรมที่ครอบคลุม" : "Comprehensive Engineering Specifications"}
             </h3>
             <div class="grid sm:grid-cols-2 gap-3">
               ${Object.entries(product.specs).map(([key, val]) => `
@@ -840,7 +840,7 @@ function initProductSearch() {
             <div class="space-y-4">
               <h3 class="text-sm font-bold uppercase tracking-wider text-navy-900 flex items-center gap-2 border-b border-slate-100 pb-2">
                 <svg class="w-4 h-4 text-ocean-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
-                Utility &amp; Infrastructure Requirements
+                ${getLang() === "zh" ? "水电气与能耗负荷规范" : getLang() === "th" ? "ข้อกำหนดด้านพลังงานและสาธารณูปโภค" : "Utility &amp; Infrastructure Requirements"}
               </h3>
               <div class="grid sm:grid-cols-2 gap-3">
                 ${Object.entries(product.utilities).map(([key, val]) => `
@@ -857,9 +857,9 @@ function initProductSearch() {
           <div class="bg-slate-100 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
             <div class="flex items-center gap-2">
               <svg class="w-5 h-5 text-teal-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              <span>Authorized by Shanghai WISER Machinery Co., Ltd. &amp; Sidefu Hotel Linen Strategic Partnership.</span>
+              <span>${getLang() === "zh" ? "上海威士机械有限公司官方授权样板工厂 &amp; 斯得福奢华酒店布草战略合作伙伴。" : getLang() === "th" ? "ได้รับอนุญาตจาก Shanghai WISER Machinery Co., Ltd. และพันธมิตรเชิงกลยุทธ์ Sidefu Linen" : "Authorized by Shanghai WISER Machinery Co., Ltd. &amp; Sidefu Hotel Linen Strategic Partnership."}</span>
             </div>
-            <a href="contact.html?req=cad" class="text-ocean-600 font-bold hover:underline shrink-0">Request CAD Plant Layout Drawings &rarr;</a>
+            <a href="contact.html?req=cad" class="text-ocean-600 font-bold hover:underline shrink-0">${getLang() === "zh" ? "索取 CAD 整厂布局规划图纸 →" : getLang() === "th" ? "ขอแบบแปลนผังโรงงาน CAD →" : "Request CAD Plant Layout Drawings &rarr;"}</a>
           </div>
         </div>
       </div>
