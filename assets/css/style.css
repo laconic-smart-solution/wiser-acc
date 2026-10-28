@@ -400,3 +400,12 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     background: #FFFFFF !important;
   }
 }
+
+/* Mobile menu state utilities (missing from the compiled tailwind.min.css).
+   Without these the closed menu stays rendered, invisible but full-height,
+   and intercepts taps on content underneath (e.g. video controls on phones). */
+#mobile-menu.max-h-0 { max-height: 0; }
+#mobile-menu.invisible { visibility: hidden; pointer-events: none; }
+#mobile-menu.pb-0 { padding-bottom: 0; }
+#mobile-menu.opacity-100 { opacity: 1; }
+#mobile-menu.max-h-\[600px\] { max-height: 600px; }
