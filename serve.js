@@ -15,7 +15,9 @@ const MIME_TYPES = {
   '.jpeg': 'image/jpeg',
   '.svg': 'image/svg+xml',
   '.webp': 'image/webp',
-  '.ico': 'image/x-icon'
+  '.ico': 'image/x-icon',
+  '.mp4': 'video/mp4',
+  '.webm': 'video/webm'
 };
 
 const server = http.createServer((req, res) => {
@@ -41,7 +43,37 @@ const server = http.createServer((req, res) => {
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
-    res.writeHead(200, { 'Content-Type': contentType });
+    // Range support so video can seek and play on Safari/iOS
+    const range = req.headers.range;
+    if (range) {
+      const match = /^bytes=(\d*)-(\d*)$/.exec(range);
+      let start = match && match[1] !== '' ? parseInt(match[1], 10) : NaN;
+      let end = match && match[2] !== '' ? parseInt(match[2], 10) : stats.size - 1;
+      if (match && match[1] === '' && match[2] !== '') {
+        start = Math.max(stats.size - parseInt(match[2], 10), 0);
+        end = stats.size - 1;
+      }
+      if (!match || isNaN(start) || start > end || start >= stats.size) {
+        res.writeHead(416, { 'Content-Range': `bytes */${stats.size}` });
+        res.end();
+        return;
+      }
+      end = Math.min(end, stats.size - 1);
+      res.writeHead(206, {
+        'Content-Type': contentType,
+        'Content-Range': `bytes ${start}-${end}/${stats.size}`,
+        'Accept-Ranges': 'bytes',
+        'Content-Length': end - start + 1
+      });
+      fs.createReadStream(filePath, { start, end }).pipe(res);
+      return;
+    }
+
+    res.writeHead(200, {
+      'Content-Type': contentType,
+      'Accept-Ranges': 'bytes',
+      'Content-Length': stats.size
+    });
     fs.createReadStream(filePath).pipe(res);
   });
 });

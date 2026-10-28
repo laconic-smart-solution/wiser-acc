@@ -411,6 +411,13 @@
     "terms": "Terms of Service",
     "rfq": "Request Quotation"
   },
+  "factoryTour": {
+    "tag": "Factory Tour",
+    "title": "Inside the WISER ACC Thailand Model Laundry Plant",
+    "desc": "A 2,600 sqm showcase plant at Suntai Industrial Park, Rayong, fully equipped with WISER imported laundry systems.",
+    "thCaption": "Factory tour (Thai subtitles)",
+    "zhCaption": "Factory tour (Chinese subtitles)"
+  },
   "pillars": {
     "tag": "Complete Integrated Solutions",
     "title": "Two Pillars of Excellence Under One Roof",

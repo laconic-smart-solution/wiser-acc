@@ -12,6 +12,9 @@ yarn-error.log*
 Thumbs.db
 Desktop.ini
 
+# Large media (copy to server manually)
+assets/video/*.mp4
+
 # IDE & Editor
 .vscode/
 .idea/
