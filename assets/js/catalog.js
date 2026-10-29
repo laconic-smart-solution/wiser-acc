@@ -19,6 +19,18 @@ const WiserCatalog = (() => {
 
   const localizedCatalogData = {
     zh: {
+      "mach-tunnel-washer": {
+        "title": "隧道连续式洗涤龙系统",
+        "subtitle": "上海威士大容量连续式洗涤机组",
+        "badge": "超大型集约化产线",
+        "categoryTag": "上海威士机械",
+        "highlights": [
+          "四水箱循环节水与多重毛绒过滤系统",
+          "土舱进水确保洗涤效率，各舱独立温控与精准加料",
+          "连续式大容量洗涤，满足大批量布草日处理需求",
+          "智能稳定运行，大幅降低用工、水耗与能耗 30%+"
+        ]
+      },
       "mach-washer-50kg": {
         "title": "全悬浮高速工业洗脱机 (350G)",
         "subtitle": "上海威士专利全悬浮气囊减震重型系列",
@@ -56,15 +68,15 @@ const WiserCatalog = (() => {
         ]
       },
       "mach-flatwork-ironer": {
-        "title": "大口径槽式高速熨平机 (3.0m / 3.3m)",
-        "subtitle": "镜面加热滚筒高光平整系列",
-        "badge": "五星平烫标准",
+        "title": "全自动展平熨烫设备系统 (3.0m / 3.3m)",
+        "subtitle": "展平与槽烫智能无缝衔接高光平整系列",
+        "badge": "智能化联动",
         "categoryTag": "上海威士机械",
         "highlights": [
-          "超大口径镜面加热滚筒，确保布草光泽平整",
-          "导热油/蒸汽/天然气多元化高效供热",
-          "无级变频智能调速，最高线速达 35 米/分钟",
-          "高敏安全防夹挡板与急停联动保护"
+          "自动抓取上料与展平智能联动，熨烫高效平整",
+          "展平与槽式熨烫无缝衔接，综合效率成倍提升",
+          "大幅降低人工用工成本，确保布草出厂品质标准统一",
+          "导热油/蒸汽多元化供热，超大口径镜面加热滚筒"
         ]
       },
       "mach-sheet-folder": {
@@ -153,6 +165,18 @@ const WiserCatalog = (() => {
       }
     },
     th: {
+      "mach-tunnel-washer": {
+        "title": "ระบบอุโมงค์ซักผ้าต่อเนื่อง (Continuous Tunnel Washer)",
+        "subtitle": "Shanghai WISER ระบบซักผ้าอุตสาหกรรมขนาดใหญ่แบบต่อเนื่อง",
+        "badge": "ระดับอุตสาหกรรมขนาดใหญ่",
+        "categoryTag": "เครื่องจักร Shanghai WISER",
+        "highlights": [
+          "ระบบหมุนเวียนน้ำ 4 ถัง พร้อมระบบกรองขุยผ้ารักษาคุณภาพการซัก",
+          "ระบบจ่ายน้ำตามช่องซัก เพิ่มประสิทธิภาพการซักสูงสุด",
+          "รองรับการซักต่อเนื่องปริมาณมหาศาลสำหรับโรงซักอุตสาหกรรม",
+          "ควบคุมอัจฉริยะ เสถียรสูง ประหยัดน้ำและพลังงานมากกว่า 30%"
+        ]
+      },
       "mach-washer-50kg": {
         "title": "เครื่องซักสลัดอุตสาหกรรมความเร็วสูง (350G)",
         "subtitle": "Shanghai WISER ซีรีส์กันสะเทือนถุงลมไร้ฐานราก",
@@ -190,15 +214,15 @@ const WiserCatalog = (() => {
         ]
       },
       "mach-flatwork-ironer": {
-        "title": "เครื่องรีดผ้าแบบลูกกลิ้งความเร็วสูง (3.0ม. / 3.3ม.)",
-        "subtitle": "ลูกกลิ้งขัดเงาพิเศษ ให้ผ้าเรียบเนียนระดับ 5 ดาว",
-        "badge": "มาตรฐานเรียบเนียน 5 ดาว",
+        "title": "ระบบเครื่องป้อนและรีดผ้าอัตโนมัติ (3.0ม. / 3.3ม.)",
+        "subtitle": "ระบบป้อนผ้าคลี่ตรงและรีดผ้ากระทะร้อนแบบไร้รอยต่อ",
+        "badge": "ระบบเชื่อมอัจฉริยะ",
         "categoryTag": "เครื่องจักร Shanghai WISER",
         "highlights": [
-          "ลูกกลิ้งขนาดใหญ่ขัดเงาพิเศษ ผ้ารีดเรียบเงางาม",
-          "เลือกแหล่งความร้อนได้ทั้ง ไอน้ำ ก๊าซธรรมชาติ หรือน้ำมันร้อน",
-          "ปรับความเร็วรอบอินเวอร์เตอร์ต่อเนื่อง สูงสุด 35 ม./นาที",
-          "แผงป้องกันความปลอดภัยและระบบหยุดฉุกเฉินรอบตัวเครื่อง"
+          "ระบบจับผ้าและคลี่ผ้าอัตโนมัติเชื่อมต่อกับระบบรีดอย่างราบรื่น",
+          "เพิ่มประสิทธิภาพการทำงานเป็นทวีคูณ ผ้าเรียบเนียนสม่ำเสมอ",
+          "ลดต้นทุนค่าแรงและแรงงานคนได้อย่างมีนัยสำคัญ",
+          "ลูกกลิ้งขัดเงาพิเศษ รองรับระบบไอน้ำและน้ำมันร้อน"
         ]
       },
       "mach-sheet-folder": {
@@ -290,6 +314,42 @@ const WiserCatalog = (() => {
 
   const productsData = [
     // MACHINERY
+    {
+      id: 'mach-tunnel-washer',
+      modelCode: 'WISER-TBW',
+      category: 'machinery',
+      title: 'Continuous Batch Tunnel Washer (洗涤龙)',
+      subtitle: 'Shanghai WISER Heavy Continuous Batch Washing System',
+      badge: 'Industrial Mega-Scale',
+      badgeType: 'tech',
+      image: 'assets/images/machinery/tunnel-washer.jpg',
+      capacity: '60kg/compartment (10–16 Compartments, up to 2,000 kg/hr)',
+      highlights: [
+        'Four-Tank Water Circulation & Lint Filtration (四水箱循环节水 / 毛绒过滤)',
+        'Continuous Batch Washing with Compartment Water Intake',
+        'Intelligent PLC Process Monitoring & Automated Chemical Dosing',
+        'Over 30–50% Water & Steam Savings Compared to Standalone Washers'
+      ],
+      specs: {
+        'Model Code': 'WISER-TBW Continuous Tunnel Washer',
+        'Batch Size': '60 kg per compartment (Dry Linen Weight)',
+        'Compartment Count': '10 to 16 Compartments',
+        'Throughput Capacity': '1,200 – 2,000 kg/hour continuous',
+        'Water Circulation': '4-Tank Internal Cascade & Extraction Water Reuse',
+        'Water Consumption': '5.0 – 6.5 Liters/kg dry linen',
+        'Steam Heating': 'Direct Steam Injections with Individual Chamber PID Control',
+        'Extraction System': 'High-Pressure Hydraulic Water Extraction Press (40–50 Bar)',
+        'Control Architecture': 'Industrial Touchscreen SCADA / Siemens PLC System',
+        'Certifications': 'CE Machinery Directive 2006/42/EC, ISO 9001:2015'
+      },
+      utilities: {
+        'Steam Supply': '0.7–0.8 MPa saturated dry steam',
+        'Water Supply': 'DN50 (0.3–0.5 MPa)',
+        'Electrical Supply': '380V / 3-Phase / 50-60 Hz',
+        'Compressed Air': '0.7–0.8 MPa dry oil-free air'
+      },
+      description: 'Continuous batch tunnel washer engineered for large-scale central commercial laundries and hospital/hotel consortia. Features a 4-tank water circulation system, continuous lint filtration, and multi-compartment precision chemistry dosing for unmatched energy and water efficiency.'
+    },
     {
       id: 'mach-washer-50kg',
       modelCode: 'WAS-50',
@@ -387,11 +447,11 @@ const WiserCatalog = (() => {
       id: 'mach-flatwork-ironer',
       modelCode: 'IRN-3300',
       category: 'machinery',
-      title: 'High-Speed Heated-Chest Flatwork Ironer',
-      subtitle: 'Mirror-Polished Deep Chest Ironing System',
+      title: 'High-Speed Automated Feeding & Ironing System',
+      subtitle: 'Seamless High-Efficiency Flatwork Feeding & Heated-Chest Ironer',
       badge: '5-Star Finish',
       badgeType: 'tech',
-      image: 'assets/images/machinery/flatwork-ironer.jpg',
+      image: 'assets/images/machinery/auto-feeder-ironer.jpg',
       capacity: '3.0m / 3.3m Working Width (Single/Double/Triple Chest)',
       highlights: ['Mirror-Polished Flexible Steel Chest (High Heat Transfer)', 'Hydraulic Chest Raising & Lowering System', 'Speeds up to 35 meters/min with Variable Inverter Control', 'Full Finger-Guard Safety System & Reversing Drive'],
       specs: {
